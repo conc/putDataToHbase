@@ -109,7 +109,7 @@ func putToDB(cache [cacheNum](*InfoStruct), putNum uint32) {
 		if i < maxFailNum {
 			log.Println("[warning]:commit error,Re commit data after 2*time.Second.")
 		} else {
-			log.Println("[err]:", maxFailNum+1, " attempts still not committed to the database, give up.")
+			log.Println("[err]:", maxFailNum+1, " failed, give up.")
 		}
 	}
 
