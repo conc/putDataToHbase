@@ -1,0 +1,2 @@
+# putDataToHbase
+golang使用thrift提交数据到hbase
